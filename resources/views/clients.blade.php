@@ -14,8 +14,9 @@
                 @foreach ($clients as $client)
                     <div class="px-5 py-2 text-gray-900">
                         <h3 class="text-lg text-gray-500">{{ $client->name }}</h3>
-                        <p>{{ $client->redirect }}</p>
-                        <p>{{ $client->secret }}</p>
+                        <p><b>Client ID: </b>{{ $client->id }}</p>
+                        <p><b>Client Redirec: </b>{{ $client->redirect }}</p>
+                        <p><b>Client Secret: </b>{{ $client->secret }}</p>
                     </div>
                 @endforeach
             </div>
